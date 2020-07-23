@@ -1,58 +1,88 @@
-# desafio-rn
-Desafio React Native
+<h1 align="center">
+    <a href="https://www.epocacosmeticos.com.br/" target="_blank">
+      <img alt="epoca" title="#epoca" src=".github/epoca.svg" width="250px" />
+    </a>
+</h1>
 
-# Criar um aplicativo de consulta a API de Filmes #
+<h4 align="center">
+  🚀 Análise Sentimental
+</h4>
 
-Criar um aplicativo para consultar a API de Filmes e trazer os filmes enviados pelo endpoint. Seguem abaixo telas como guia:
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/WallysonGalvao/epoca-challenge">
 
-![tela1](https://user-images.githubusercontent.com/7905193/33221593-75c45b4e-d12f-11e7-833c-cc4acbd5ef0e.png)
-![tela2](https://user-images.githubusercontent.com/7905193/33221600-85b668ee-d12f-11e7-95fa-8f66bd47f6ab.png)
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/WallysonGalvao/epoca-challenge">
 
-### **O aplicativo deve contemplar** ###
+  <a href="https://github.com/WallysonGalvao/epoca-challenge/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/WallysonGalvao/epoca-challenge">
+  </a>
 
-- __Uma lista de filmes__. Exemplo de chamada na API: `https://desafio-mobile-pitang.herokuapp.com/movies/list?page=0&size=3`.
-    * Paginação na tela de lista, com scroll infinito (incrementando o parâmetro `page`).
-    * Cada filme deve exibir Nome do filme e Foto do filme.
-    * Ao clicar em um item da lista, deve levar ao detalhe do filme.
-- __Detalhes de um filme__. Exemplo de chamada na API: `https://desafio-mobile-pitang.herokuapp.com/movies/detail/59e8ec97f36d280364369ca1`.
-    * O item de detalhe deve exibir Nome, Foto e Descrição do filme.
+  <a href="https://github.com/WallysonGalvao/epoca-challenge/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/WallysonGalvao/epoca-challenge">
+  </a>
 
-### **Essencial** ##
-* React Native 
-* Hooks ou Redux
-* Guidelines UX e UI.
-* Maior ou igual JavaScript ES6
-* Responsivo
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+</p>
 
-### **Desejável** ###
+<p align="center">
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-executando">Executando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
+<br>
 
-* Testes
-* Build no IOS
+## 💻 Projeto
 
-### **Sugestões** ###
+Esse desafio faz parte do processo seletivo da **[Época Cosméticos](https://www.epocacosmeticos.com.br/)**, com foco em React Native. Trata-se de um aplicativo de análise sentimental utilizando a API do Google Natural Language.
 
-Nesta seção sugerimos algumas bibliotecas para o uso, mas fique à vontade para escolher outras que não estiverem na lista.
+## 🎨 Layout
 
-* Axios 
-* Styled-components
+<p align="center">
+    <img alt="Aplicativo Análise Sentimental" title="#epoca" src=".github/app.png" width="720px" />
+</p>
 
-### **OBS** ###
+## :rocket: Tecnologias
 
-A foto das telas de mockup são só um guia, fique a vontade para usar o padrão de usabilidade da sua escolha.
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-### **Etapas para submissão** ###
+- [Typescript](https://www.typescriptlang.org/)
+- [React Native](https://reactnative.dev/)
+- [Twitter API](https://developer.twitter.com/en)
+- [Google Natural Language API](https://cloud.google.com/natural-language)
+- [Styled-components](https://www.styled-components.com/)
 
-O canditado ao finalizar a implementação deverá enviar um pull request para o repositório em questão.
+\* Para mais detalhes, veja o <kbd>[package.json](./package.json)</kbd>
 
-Segue o passo-a-passo:
+## :notebook: Executando
 
-1. Fazer fork do respositório
-2. Implementar seu projeto no fork realizado.
-3. Comitar e subir todas as alteraçes para o fork criado por você.
-4. Enviar um pull request pelo Github.
+### Pré-requisitos
 
-O fork deverá ser público para inspeção do código.
+É necessário que um simulador android/ios esteja rodando, ou um aparelho fisico.
 
-### **Observações** ###
+<em>Obs: Não testei no iOS por motivos de: não tenho Mac.</em>
 
-Não fazer push para este repositório.
+```bash
+# Clone este repositório
+$ git clone https://github.com/WallysonGalvao/epoca-challenge.git
+
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd epoca-challenge
+
+# Instale as dependências
+$ yarn install
+
+# Execute a aplicação
+$ yarn android ou yarn ios
+```
+
+Se desejar, pode rodar os testes do projeto:
+
+```bash
+$ yarn test
+```
+
+---
+
+Feito com horas em frente ao :computer: por [Wallyson Galvão](https://www.linkedin.com/in/wallyson-galvao/)
